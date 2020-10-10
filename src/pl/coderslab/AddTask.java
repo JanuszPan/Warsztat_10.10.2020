@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class AddTask {
 
-    public static String[][] tasks;
-    public static void addTask(){
+
+    public static void addTask(String[][] tasks){
         Scanner scan =new Scanner(System.in);
         System.out.println("Please add task description");
         String description=scan.nextLine();
