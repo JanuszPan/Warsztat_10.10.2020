@@ -27,7 +27,7 @@ public class GetOption {
                     removeTask(tasks, index);
                     break;
                 case "exit":
-                    saveTabtoFiles(fileCsv, tasks);
+//                    saveTabtoFiles(fileCsv, tasks);
                     System.out.println(ConsoleColors.RED + "Bye, bye.");
                     System.exit(0);
                     break;
