@@ -17,22 +17,15 @@ public class GetOption {
         while (scan.hasNextLine()) {
             String input = scan.nextLine();
             switch (input) {
-                case "list":
-                    printTab(tasks);
-                    break;
-                case "add":
-                    addTask();
-                    break;
-                case "remove":
-                    removeTask(tasks, index);
-                    break;
-                case "exit":
-//                    saveTabtoFiles(fileCsv, tasks);
+                case "list" -> printTab(tasks);
+                case "add" -> addTask();
+                case "remove" -> removeTask(tasks, index);
+                case "exit" -> {
+                    saveTabtoFiles(fileCsv, tasks);
                     System.out.println(ConsoleColors.RED + "Bye, bye.");
                     System.exit(0);
-                    break;
-                default:
-                    System.out.println("Please select a correct option (add, remove, list, exit)");
+                }
+                default -> System.out.println("Please select a correct option (add, remove, list, exit)");
             }
         }
     }
