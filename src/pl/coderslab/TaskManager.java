@@ -16,7 +16,7 @@ public class TaskManager {
     public static int index;
 
     public static void main(String[] args) {
-        tasks = loadDataToTable("/home/janusz/Pulpit/Warsztat_10.10.2020/tasks.csv");//metoda wczytuje dane z pliku tasks.csv i wczytuje go do tablicy tasks
+        tasks = loadDataToTable("../Warsztat_10.10.2020/tasks.csv");//metoda wczytuje dane z pliku tasks.csv i wczytuje go do tablicy tasks
         pleaseSelectAnOption(options);//metoda wyświetlająca dostępne w programie opcje
 //        getOption();// wpisanie zadania przez użytkownika add, remove, list albo exit
 //        addTask();//dodanie przez użytkownika zadanie i dopisanie do tabeli tasks
